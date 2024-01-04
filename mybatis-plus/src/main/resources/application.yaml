@@ -1,0 +1,20 @@
+server:
+  port: 9501
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3307/mybatis-plus?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+mybatis:
+  table:
+    auto: update
+  model:
+    pack: com.tr.mybatis.entity
+  database:
+    type: mysql
+
+mybatis-plus:
+  mapper-locations: classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml
